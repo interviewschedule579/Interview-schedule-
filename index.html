@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>The Royal Fork Restaurant - Interview Schedule</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:
+    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1920');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:600px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.5);
+    color:white;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.logo h1{
+    font-size:34px;
+    font-weight:700;
+    color:#ffd700;
+}
+
+.logo p{
+    color:#ddd;
+    margin-top:8px;
+    font-size:15px;
+}
+
+.form-group{
+    margin-top:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:500;
+    color:#fff;
+}
+
+input,
+select{
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:rgba(255,255,255,0.12);
+    color:white;
+    font-size:15px;
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+input::placeholder{
+    color:#ddd;
+}
+
+select option{
+    color:black;
+}
+
+.info-text{
+    font-size:13px;
+    color:#ddd;
+    margin-top:6px;
+}
+
+button{
+    width:100%;
+    margin-top:30px;
+    padding:16px;
+    border:none;
+    border-radius:14px;
+    background:#ffd700;
+    color:black;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.03);
+    background:white;
+}
+
+.footer{
+    text-align:center;
+    margin-top:25px;
+    font-size:13px;
+    color:#ccc;
+}
+
+@media(max-width:600px){
+
+.container{
+    padding:25px;
+}
+
+.logo h1{
+    font-size:28px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+<h1>The Royal Fork Restaurant</h1>
+<p>International Interview Scheduling Portal</p>
+</div>
+
+<form action="https://formspree.io/f/mkoewzlk" method="POST">
+
+<div class="form-group">
+<label>Application ID (Required)</label>
+<input type="text" name="Application ID" placeholder="Enter Application ID" required>
+<div class="info-text">Please enter your valid application ID.</div>
+</div>
+
+<div class="form-group">
+<label>First Name (Required)</label>
+<input type="text" name="First Name" placeholder="Enter First Name" required>
+<div class="info-text">Use your passport first name.</div>
+</div>
+
+<div class="form-group">
+<label>Last Name (Required)</label>
+<input type="text" name="Last Name" placeholder="Enter Last Name" required>
+<div class="info-text">Use your passport last name.</div>
+</div>
+
+<div class="form-group">
+<label>Email Address (Required)</label>
+<input type="email" name="Email" placeholder="Enter Email Address" required>
+<div class="info-text">Interview confirmation will be sent by email.</div>
+</div>
+
+<div class="form-group">
+<label>Interview Date Selection (Required)</label>
+<input type="date" name="Interview Date" required>
+<div class="info-text">Select your preferred interview date.</div>
+</div>
+
+<div class="form-group">
+<label>Time Slot (Required)</label>
+<select name="Time Slot" required>
+<option value="">Select Time Slot</option>
+<option>09:00 AM</option>
+<option>10:00 AM</option>
+<option>11:00 AM</option>
+<option>12:00 PM</option>
+<option>01:00 PM</option>
+<option>02:00 PM</option>
+<option>03:00 PM</option>
+<option>04:00 PM</option>
+<option>05:00 PM</option>
+</select>
+<div class="info-text">Choose your available interview timing.</div>
+</div>
+
+<button type="submit">Schedule Interview</button>
+
+</form>
+
+<div class="footer">
+© 2026 The Royal Fork Restaurant — All Rights Reserved
+</div>
+
+</div>
+
+</body>
+  </html>
